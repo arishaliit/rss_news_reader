@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox fx:id="vBox" prefHeight="179.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.finalproject.controller.FeedItemController">
+   <children>
+      <Separator prefWidth="200.0" />
+      <HBox fx:id="hBox" alignment="CENTER_LEFT" prefHeight="193.0" prefWidth="737.0" spacing="10.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="176.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS" />
+            <VBox fx:id="vBox2" alignment="CENTER_LEFT" prefHeight="104.0" prefWidth="530.0" spacing="5.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="titleText" text="Label">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Separator prefWidth="200.0" />
+                  <Label fx:id="dateText" text="Label" VBox.vgrow="ALWAYS" />
+                  <Separator prefWidth="200.0" />
+                  <TextArea fx:id="descText" editable="false" prefHeight="81.0" prefWidth="545.0" style="-fx-border-width: 0; -fx-background-color: white;" wrapText="true" />
+                  <Separator prefWidth="200.0" />
+                  <Hyperlink fx:id="urlText" onAction="#openUrl" prefHeight="23.0" text="Hyperlink" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Hyperlink>
+                  <Separator prefWidth="200.0" />
+               </children>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

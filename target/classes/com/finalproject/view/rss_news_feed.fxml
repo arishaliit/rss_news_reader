@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.finalproject.controller.NewsController">
+   <top>
+      <BorderPane BorderPane.alignment="CENTER">
+         <left>
+            <Label prefHeight="43.0" prefWidth="340.0" text="RSS News Reader (CNN.com)" textFill="#b23333" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" top="5.0" />
+               </padding>
+            </Label>
+         </left>
+         <right>
+            <ComboBox fx:id="newsTypeCombo" onAction="#newsTypeComboBoxChange" prefWidth="150.0" BorderPane.alignment="CENTER" />
+         </right>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </BorderPane>
+   </top>
+   <bottom>
+      <BorderPane prefHeight="27.0" prefWidth="600.0">
+         <right>
+            <ProgressBar fx:id="progressBar" prefHeight="17.0" prefWidth="107.0" progress="0.0" BorderPane.alignment="CENTER" />
+         </right>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <left>
+            <Label text="Designed by Arish Ali (0684469)" textFill="#1201ff" BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+   </bottom>
+   <center>
+      <ScrollPane fx:id="scrollPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <ListView fx:id="listView" prefHeight="200.0" prefWidth="200.0" />
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

@@ -12,9 +12,17 @@ RSS News reader is a JavaFX application that gets the RSS feed from CNN.com and 
 ---
 ### Techniques & Functionalities
 * MVC
+* Java Class Design
 * Inner Class (Splash class inside Main.Java)
 * Lambda (Implemented Task threads using Lambda)
 * Logging (Using Log4J)
+* Streams
+* Enumeration
+* Input and Output
+* JavaFX
+* Lambdas
+* Concurrency
+* Collections
 * FXML
 * Maven
 
